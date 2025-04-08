@@ -10,6 +10,7 @@
   .contenedor-menu {
     width: 100%;
     background-color: var(--rojo);
+    display: none;
   }
   .contenedor-menu ul {
     width: 100%;
