@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gimnasio</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/movil.css">
+  <script src="https://kit.fontawesome.com/fe8b02346c.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/responsiveslides.js"></script>
+  <script src="js/funciones.js"></script>
+  <script src="js/wow.min.js"></script>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  
+
+</head>
+<body>
+  <header id="inicio">
+    <div class="contenedor-header ancho margen">
+      <div class="menu-oculto">
+        <figure class="logo-gym">
+          <img src="img/logo.png" alt="">
+        </figure>
+        <a href="#" class="menubarras" id="iconomenu">
+          <i class="fas fa-bars"></i>
+        </a>
+      </div>
+      <nav class="contenedor-menu" id="contenedormenu">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">SERVICES</a></li>
+          <li><a href="#">GALLERY</a></li>
+          <li><a href="#">COACHES</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section>
+    <div class="contenedor-slide">
+      <ul class="rslides">
+        <li>
+          <img src="img/slide1.jpg" alt="">
+          <div class="contenedor-info">
+            <h1>BEST FITNESS</h1>
+            <p>Our club encourages wellness by providing top-notch equipment, first-class instructors, innovative classess, and quelifield staff.</p>
+            <a href="#" class="btn-rojo">JOIN NOW</a>
+          </div>
+        </li>
+        <li>
+          <img src="img/slide2.jpg" alt="">
+        </li>
+        <li>
+          <img src="img/slide3.jpg" alt="">
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="contenedor-services ancho margen">
+      <h2>SERVICES</h2>
+      <h4>Nuestros servicios</h4>
+      <hr class="linea">
+      <div class="contenedor-services-items">
+        <div class="item wow animate__bounceIn">
+          <span><i class="fas fa-award"></i></span>
+          <h3>QUALITY TRAINING</h3>
+          <p>At our fitness studio, you can experience the best level of a customer service.</p>
+        </div>
+        <div class="item wow animate__bounceIn">
+          <span><i class="fas fa-dumbbell"></i></span>
+          <h3>SPACIOUS GYM</h3>
+          <p>Our gym has enough place for all kinds of workouts and wide variety of equipment.</p>
+        </div>
+        <div class="item wow animate__bounceIn">
+          <span><i class="fas fa-file-invoice"></i></span>
+          <h3>UNIQUE FITNESS PROGRAMS</h3>
+          <p>At our fitness studio, you can experience the best level of a customer service.</p>
+        </div>
+        <div class="item wow animate__bounceIn">
+          <span><i class="fas fa-users"></i></span>
+          <h3>GROUP CLASSES</h3>
+          <p>At our fitness studio, you can experience the best level of a customer service.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="galeria">
+    <div class="contenedor-galeria ancho margen">
+      <div class="contenedor-galeria-fotos">
+        <figure class="galeria-foto">
+          <a href="img/foto1.jpg" data-fancybox="gallery">
+            <img src="img/foto1.jpg" alt="">
+          </a>
+        </figure>
+        <figure class="galeria-foto">
+          <a href="img/foto2.jpg" data-fancybox="gallery">
+            <img src="img/foto2.jpg" alt="">
+          </a>
+        </figure>
+        <figure class="galeria-foto">
+          <a href="img/foto3.jpg" data-fancybox="gallery">
+            <img src="img/foto3.jpg" alt="">
+          </a>
+        </figure>
+        <figure class="galeria-foto">
+          <a href="img/foto4.jpg" data-fancybox="gallery">
+            <img src="img/foto4.jpg" alt="">
+          </a>
+        </figure>
+      </div>
+      <div class="contenedor-galeria-info">
+        <h2><b>GALLERY</b> FITNESS <b>CLUB</b></h2>
+        <p>Profit is the fitness club that makes fitness totally accessible to everybody. We promise to help people from all walks of life achieve their individual health and fitness goals - no matter their shape, age and experience</p>
+        <a href="#" class="btn-rojo">JOIN NOW</a>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="contenedor-footer ancho margen">
+      <hr>
+      <div class="contenedor-elementos">
+        <span>© 2020 Profit. Privacy Policy</span>
+        <ul class="contenedor-redes">
+          <li>
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-youtube"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <a href="#inicio" class="btn-subir"><i class="fa-solid fa-angle-up"></i></a>
+
+
+
+
+
+
+
+  <script>
+    new WOW().init();
+  </script>
+  <script>
+    $(function () {
+  $(".rslides").responsiveSlides({
+    auto: true,
+    pager: false,
+    nav: true,
+    speed: 500,
+    timeout: 4000,
+    namespace: "rslides"
+  });
+
+  setTimeout(() => {
+    $(".rslides_nav.prev").text("<");
+    $(".rslides_nav.next").text(">");
+  }, 100); // Se asegura que los botones ya estén en el DOM
+});
+
+
+  //script menu desplegable
+  $("#iconomenu").click(function(){
+      $("#contenedormenu").slideToggle();
+    });
+  </script>
+</body>
+</html>
